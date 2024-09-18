@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import "./filme-info.css";
 import api from "../../services/api";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 function Filme() {
   const { id } = useParams();
@@ -89,6 +90,9 @@ function Filme() {
           >
             Trailer
           </a>
+        </button>
+        <button>
+          <Link to="/">Prev</Link>
         </button>
       </div>
     </div>

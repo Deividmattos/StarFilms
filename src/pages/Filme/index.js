@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
 import "./filme-info.css";
-
 import api from "../../services/api";
+import { Link } from "react-router-dom";
 
 function Filme() {
   const { id } = useParams();
@@ -90,6 +89,9 @@ function Filme() {
           >
             Trailer
           </a>
+        </button>
+        <button>
+          <Link to="/">Buscar Filmes</Link>
         </button>
       </div>
     </div>

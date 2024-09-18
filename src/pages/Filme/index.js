@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-
 import "./filme-info.css";
-
 import api from "../../services/api";
+import { toast } from "react-toastify";
 
 function Filme() {
   const { id } = useParams();
@@ -50,13 +49,13 @@ function Filme() {
     );
 
     if (hasFilme) {
-      alert("Esse filme ja esta na lista");
+      toast.warn("Esse filme ja esta na lista");
       return;
     }
 
     filmesSalvos.push(filme);
     localStorage.setItem("@StarFlix", JSON.stringify(filmesSalvos));
-    alert("Filme Salvo com sucesso");
+    toast.success("Filme Salvo com sucesso");
   }
 
   if (loading) {

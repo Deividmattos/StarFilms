@@ -1,0 +1,45 @@
+.meus-filme {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.meus-filme h1 {
+  margin-bottom: 14px;
+}
+
+.meus-filme span {
+  font-size: 18px;
+}
+.meus-filme ul {
+  width: 720px;
+}
+.meus-filme ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.meus-filme div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meus-filme div a {
+  text-decoration: none;
+  color: #116feb;
+  margin-right: 14px;
+}
+.excluir_item button {
+  background-color: #c7c6c9;
+  color: white;
+  padding: 14px;
+  border-radius: 5px;
+  border: 0;
+}
+.excluir_item button:hover {
+  background-color: #0e07dd;
+}

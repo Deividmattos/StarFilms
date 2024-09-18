@@ -1,9 +1,7 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Erro from "./pages/Erro";
 import Favoritos from "./pages/Favoritos";
-
 import Header from "./components/Header";
-
 import Home from "./pages/Home";
 import Filme from "./pages/Filme";
 
